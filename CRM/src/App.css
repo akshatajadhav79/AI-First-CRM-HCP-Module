@@ -1,0 +1,283 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter', sans-serif;
+}
+
+body{
+background:#f4f6f9;
+}
+
+/* Layout */
+
+.container{
+display:flex;
+gap:20px;
+padding:30px;
+}
+
+.left{
+flex:3;
+}
+
+.right{
+flex:1;
+}
+
+/* Title */
+
+h2{
+font-size:24px;
+font-weight:600;
+margin-bottom:20px;
+
+}
+
+h3{
+font-size:13px;
+font-weight:600;
+margin-bottom:15px;
+color:#333;
+}
+
+/* Card */
+
+.card{
+background:white;
+padding:0px;
+border-radius:8px;
+margin-bottom:20px;
+box-shadow:0 1px 3px rgba(0,0,0,0.06);
+}
+
+.cardbody{
+    padding: 20px;
+}
+
+/* Grid layout */
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+margin-bottom:15px;
+}
+
+.HeadTitle{
+background-color: #dcdcdc;
+padding: 10px;
+align-content: center;
+}
+
+/* Inputs */
+
+label{
+font-size:13px;
+font-weight:500;
+margin-bottom:5px;
+display:block;
+color:#555;
+}
+
+input,
+select,
+textarea{
+width:100%;
+padding:10px;
+border:1px solid #dcdcdc;
+border-radius:6px;
+font-size:14px;
+outline:none;
+transition:0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+border-color:#4f46e5;
+}
+
+/* Textarea */
+
+textarea{
+min-height:80px;
+resize:none;
+}
+
+/* Voice button */
+
+.voiceBtn{
+margin-top:10px;
+padding:8px 14px;
+border:none;
+background:#eef0f3;
+border-radius:6px;
+cursor:pointer;
+font-size:13px;
+}
+
+.voiceBtn:hover{
+background:#e2e6ea;
+}
+
+/* Materials section */
+
+.row{
+display:flex;
+gap:15px;
+}
+
+.box{
+flex:1;
+border:1px dashed #dcdcdc;
+border-radius:6px;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-size:13px;
+margin-top: 10px;
+}
+
+.box button{
+background:#f1f3f6;
+border:none;
+padding:6px 10px;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* Sentiment */
+
+.radio{
+display:flex;
+gap:25px;
+margin-bottom:15px;
+font-size:14px;
+}
+
+.radio input{
+margin-right:5px;
+}
+
+/* AI Assistant */
+
+.ai-card{
+width:320px;
+background:#dcdcdc;
+border-radius:12px;
+padding:15px;
+font-family:Inter, sans-serif;
+margin-top: 50px;
+}
+
+.ai-title{
+font-size:18px;
+font-weight:600;
+margin-bottom:10px;
+}
+
+.chat-box{
+background:#f1f3f7;
+height:320px;
+border-radius:10px;
+padding:12px;
+overflow-y:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.chat-row{
+display:flex;
+}
+
+.chat-row.user{
+justify-content:flex-end;
+}
+
+.chat-row.assistant{
+justify-content:flex-start;
+}
+
+.chat-bubble{
+max-width:75%;
+padding:10px 14px;
+border-radius:14px;
+font-size:14px;
+line-height:1.4;
+}
+
+.user .chat-bubble{
+background:#5a4df0;
+color:white;
+border-bottom-right-radius:4px;
+}
+
+.assistant .chat-bubble{
+background:white;
+color:#333;
+border-bottom-left-radius:4px;
+box-shadow:0 1px 3px rgba(0,0,0,0.08);
+}
+
+.chat-input{
+display:flex;
+gap:10px;
+margin-top:10px;
+}
+
+.chat-input input{
+flex:1;
+padding:10px;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:14px;
+}
+
+.chat-input button{
+background:#5a4df0;
+color:white;
+border:none;
+padding:10px 18px;
+border-radius:8px;
+cursor:pointer;
+font-weight:500;
+}
+
+.chat-input button:hover{
+background:#483cd6;
+}
+
+/* AI Suggested Followups */
+
+.ai-followups{
+margin-top:15px;
+padding-left:5px;
+}
+
+.followup-title{
+font-size:13px;
+color:#666;
+margin-bottom:5px;
+}
+
+.followup-list{
+list-style:none;
+padding-left:10px;
+}
+
+.followup-item{
+font-size:13px;
+color:#2563eb;
+margin-bottom:4px;
+cursor:pointer;
+}
+
+.followup-item:hover{
+text-decoration:underline;
+}
